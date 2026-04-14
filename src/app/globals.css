@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+html.dark,
+html.dark body {
+  background: #111827;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(400%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
